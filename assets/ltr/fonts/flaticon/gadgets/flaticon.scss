@@ -1,0 +1,77 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?a9f9023513772d742075c6450e416b9c") format("truetype"),
+url("./flaticon.woff?a9f9023513772d742075c6450e416b9c") format("woff"),
+url("./flaticon.woff2?a9f9023513772d742075c6450e416b9c") format("woff2"),
+url("./flaticon.eot?a9f9023513772d742075c6450e416b9c#iefix") format("embedded-opentype"),
+url("./flaticon.svg?a9f9023513772d742075c6450e416b9c#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "gamepad": "\f101",
+    "internet": "\f102",
+    "jack-cable": "\f103",
+    "keyboard": "\f104",
+    "laptop": "\f105",
+    "lcd": "\f106",
+    "mobile-phone": "\f107",
+    "mouse": "\f108",
+    "pendrive": "\f109",
+    "photo-camera": "\f10a",
+    "tablet": "\f10b",
+    "video-camera": "\f10c",
+    "watch": "\f10d",
+);
+
+.flaticon-gamepad:before {
+    content: map-get($flaticon-map, "gamepad");
+}
+.flaticon-internet:before {
+    content: map-get($flaticon-map, "internet");
+}
+.flaticon-jack-cable:before {
+    content: map-get($flaticon-map, "jack-cable");
+}
+.flaticon-keyboard:before {
+    content: map-get($flaticon-map, "keyboard");
+}
+.flaticon-laptop:before {
+    content: map-get($flaticon-map, "laptop");
+}
+.flaticon-lcd:before {
+    content: map-get($flaticon-map, "lcd");
+}
+.flaticon-mobile-phone:before {
+    content: map-get($flaticon-map, "mobile-phone");
+}
+.flaticon-mouse:before {
+    content: map-get($flaticon-map, "mouse");
+}
+.flaticon-pendrive:before {
+    content: map-get($flaticon-map, "pendrive");
+}
+.flaticon-photo-camera:before {
+    content: map-get($flaticon-map, "photo-camera");
+}
+.flaticon-tablet:before {
+    content: map-get($flaticon-map, "tablet");
+}
+.flaticon-video-camera:before {
+    content: map-get($flaticon-map, "video-camera");
+}
+.flaticon-watch:before {
+    content: map-get($flaticon-map, "watch");
+}

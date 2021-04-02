@@ -1,0 +1,73 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?b5348431d8f02d0e20f8d7c5571c7695") format("truetype"),
+url("./flaticon.woff?b5348431d8f02d0e20f8d7c5571c7695") format("woff"),
+url("./flaticon.woff2?b5348431d8f02d0e20f8d7c5571c7695") format("woff2"),
+url("./flaticon.eot?b5348431d8f02d0e20f8d7c5571c7695#iefix") format("embedded-opentype"),
+url("./flaticon.svg?b5348431d8f02d0e20f8d7c5571c7695#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "bikini": "\f101",
+    "blazer": "\f102",
+    "coat": "\f103",
+    "dress-1": "\f104",
+    "dress": "\f105",
+    "jeans": "\f106",
+    "shirts": "\f107",
+    "skirt": "\f108",
+    "socks": "\f109",
+    "sweater": "\f10a",
+    "swim-shorts": "\f10b",
+    "t-shirt": "\f10c",
+);
+
+.flaticon-bikini:before {
+    content: map-get($flaticon-map, "bikini");
+}
+.flaticon-blazer:before {
+    content: map-get($flaticon-map, "blazer");
+}
+.flaticon-coat:before {
+    content: map-get($flaticon-map, "coat");
+}
+.flaticon-dress-1:before {
+    content: map-get($flaticon-map, "dress-1");
+}
+.flaticon-dress:before {
+    content: map-get($flaticon-map, "dress");
+}
+.flaticon-jeans:before {
+    content: map-get($flaticon-map, "jeans");
+}
+.flaticon-shirts:before {
+    content: map-get($flaticon-map, "shirts");
+}
+.flaticon-skirt:before {
+    content: map-get($flaticon-map, "skirt");
+}
+.flaticon-socks:before {
+    content: map-get($flaticon-map, "socks");
+}
+.flaticon-sweater:before {
+    content: map-get($flaticon-map, "sweater");
+}
+.flaticon-swim-shorts:before {
+    content: map-get($flaticon-map, "swim-shorts");
+}
+.flaticon-t-shirt:before {
+    content: map-get($flaticon-map, "t-shirt");
+}

@@ -1,0 +1,73 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?041cfc0cf2477b005bf3d3a30478aa15") format("truetype"),
+url("./flaticon.woff?041cfc0cf2477b005bf3d3a30478aa15") format("woff"),
+url("./flaticon.woff2?041cfc0cf2477b005bf3d3a30478aa15") format("woff2"),
+url("./flaticon.eot?041cfc0cf2477b005bf3d3a30478aa15#iefix") format("embedded-opentype"),
+url("./flaticon.svg?041cfc0cf2477b005bf3d3a30478aa15#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "blush": "\f101",
+    "brush-1": "\f102",
+    "brush": "\f103",
+    "cosmetics": "\f104",
+    "cream": "\f105",
+    "hand-bag": "\f106",
+    "lipstick": "\f107",
+    "make-up": "\f108",
+    "mascara": "\f109",
+    "mirror": "\f10a",
+    "powder": "\f10b",
+    "primer": "\f10c",
+);
+
+.flaticon-blush:before {
+    content: map-get($flaticon-map, "blush");
+}
+.flaticon-brush-1:before {
+    content: map-get($flaticon-map, "brush-1");
+}
+.flaticon-brush:before {
+    content: map-get($flaticon-map, "brush");
+}
+.flaticon-cosmetics:before {
+    content: map-get($flaticon-map, "cosmetics");
+}
+.flaticon-cream:before {
+    content: map-get($flaticon-map, "cream");
+}
+.flaticon-hand-bag:before {
+    content: map-get($flaticon-map, "hand-bag");
+}
+.flaticon-lipstick:before {
+    content: map-get($flaticon-map, "lipstick");
+}
+.flaticon-make-up:before {
+    content: map-get($flaticon-map, "make-up");
+}
+.flaticon-mascara:before {
+    content: map-get($flaticon-map, "mascara");
+}
+.flaticon-mirror:before {
+    content: map-get($flaticon-map, "mirror");
+}
+.flaticon-powder:before {
+    content: map-get($flaticon-map, "powder");
+}
+.flaticon-primer:before {
+    content: map-get($flaticon-map, "primer");
+}
